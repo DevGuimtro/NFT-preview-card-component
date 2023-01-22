@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.equilibriumImage {
+  /* position: relative; */
+  display: flex;
+  width: 100%;
+  min-height: 240px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nftCard {
+  position: relative;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 5px 5px 4px #101010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.nameText {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  padding-bottom: 1rem;
+  text-align: start;
+  transition: 0.3s;
+  text-shadow: 2px 3px 2px #101010;
+}
+
+.descriptionText {
+  color: hsl(215, 51%, 70%);
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: start;
+  padding-bottom: 1rem;
+}
+
+.priceText {
+  color: hsl(178, 100%, 50%);
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+  font-size: 0.9rem;
+  text-shadow: 1px 2px 1px #101010;
+}
+
+.daysLeft {
+  color: hsl(215, 51%, 70%);
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+  text-shadow: 1px 2px 1px #101010;
+}
+
+.ethereumIcon,
+.clockIcon {
+  padding-right: 0.2rem;
+  vertical-align: middle;
+  width: 17px;
+}
+
+hr {
+  border-color: hsl(215, 32%, 27%);
+  margin-top: 1.5rem;
+  opacity: 8;
+}
+
+.avatarImage {
+  max-width: 30px;
+  max-height: 30px;
+  border: 1px solid white;
+  border-radius: 50px;
+  vertical-align: middle;
+  line-height: 35px;
+  margin-right: 1rem;
+}
+
+.grayAuthorName {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.authorName {
+  color: white;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.infoAutor {
+  margin-top: 1rem;
+  text-align: start;
+}
+
+.authorName:hover,
+.nameText:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  padding: 2rem;
+  left: 0;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101010;
+}
+
+a {
+  color: hsl(215, 51%, 70%);
+  text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 510px) {
+  .attribution {
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+  }
+}
